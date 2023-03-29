@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "back": "npm --prefix ./api/ run start",
+    "front": "npm --prefix ./view/ run start",
+    "start": "concurrently --kill-others \"npm run front\" \"npm run back\""
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

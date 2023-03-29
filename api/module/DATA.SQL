@@ -1,0 +1,7 @@
+CREATE TABLE todo (
+    todo_id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    complete BOOLEAN DEFAULT FALSE,
+    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    is_deleted SMALLINT DEFAULT 0
+)
